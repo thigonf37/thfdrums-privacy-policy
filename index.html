@@ -78,11 +78,11 @@
     </ul>
 
     <h2>Verificação de instalação legítima</h2>
-    <p>Pra evitar que uma cópia instalada do app seja copiada e repassada por fora da Play Store, o app faz uma checagem técnica única (na primeira vez que abre, ou de novo caso a checagem anterior falhe) usando o <strong>Firebase App Check</strong> da Google, com o <strong>Play Integrity API</strong> — um serviço da própria Google que confirma se a instalação veio de fato da Play Store. Depois de confirmada uma vez, o resultado fica salvo só no aparelho, e o app volta a funcionar 100% offline no uso normal.</p>
-    <p>Essa checagem envia ao Google sinais técnicos sobre o aparelho e a integridade do app (nada que identifique você pessoalmente — sem nome, e-mail ou conta) e recebe de volta só uma confirmação. Enquanto ela não é confirmada, o app trava a comunicação com módulos MIDI externos e desativa a maior parte dos pads de teste em tela.</p>
+    <p>Pra evitar que uma cópia instalada do app seja copiada e repassada por fora da Play Store, o app faz uma checagem técnica única (na primeira vez que abre, ou de novo caso a checagem anterior falhe) usando o <strong>serviço de licenciamento da própria Google Play Store</strong> (Google Play Licensing) — o mesmo mecanismo interno que a Play Store já usa pra confirmar compras de qualquer app pago. Depois de confirmada uma vez, o resultado fica salvo só no aparelho, e o app volta a funcionar 100% offline no uso normal.</p>
+    <p>Essa checagem consulta o app da Play Store já instalado no seu aparelho, perguntando apenas se a conta ativa tem direito a este app, e recebe de volta só uma confirmação assinada digitalmente — o Th-FDrums Player não envia nem recebe nome, e-mail, localização ou qualquer informação que identifique você pessoalmente. Enquanto ela não é confirmada, o app trava a comunicação com módulos MIDI externos e desativa a maior parte dos pads de teste em tela.</p>
 
     <h2>Serviços de terceiros</h2>
-    <p>O único serviço de terceiros integrado é o Firebase (Google), usado exclusivamente pra verificação de instalação legítima descrita acima — não é usado pra anúncios, analytics de uso ou qualquer outro fim. Veja a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidade do Google</a> pra saber como esses sinais técnicos são tratados do lado deles.</p>
+    <p>Não há nenhum serviço de terceiros integrado ao app. A única comunicação de rede é a consulta ao serviço de licenciamento já embutido na Play Store, descrita acima — não é usada pra anúncios, analytics de uso ou qualquer outro fim. Veja a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidade do Google</a> pra saber como o Google Play trata essa consulta do lado dele.</p>
 
     <h2>Crianças</h2>
     <p>O app não coleta dados pessoais de ninguém, incluindo crianças, pelos mesmos motivos acima.</p>
@@ -122,11 +122,11 @@
     </ul>
 
     <h2>Legitimate installation check</h2>
-    <p>To prevent an installed copy of the app from being copied and passed around outside the Play Store, the app performs a one-time technical check (on first launch, or again if the previous check failed) using Google's <strong>Firebase App Check</strong>, with the <strong>Play Integrity API</strong> — a Google service that confirms the installation genuinely came from the Play Store. Once confirmed, the result is saved only on the device, and the app goes back to working 100% offline in normal use.</p>
-    <p>This check sends Google technical signals about the device and app integrity (nothing that identifies you personally — no name, email, or account) and receives back only a confirmation. Until it's confirmed, the app blocks communication with external MIDI modules and disables most of the on-screen test pads.</p>
+    <p>To prevent an installed copy of the app from being copied and passed around outside the Play Store, the app performs a one-time technical check (on first launch, or again if the previous check failed) using the <strong>Google Play Store's own licensing service</strong> (Google Play Licensing) — the same internal mechanism the Play Store already uses to confirm purchases for any paid app. Once confirmed, the result is saved only on the device, and the app goes back to working 100% offline in normal use.</p>
+    <p>This check queries the Play Store app already installed on your device, asking only whether the active account is entitled to this app, and receives back only a digitally signed confirmation — Th-FDrums Player doesn't send or receive your name, email, location, or anything that identifies you personally. Until it's confirmed, the app blocks communication with external MIDI modules and disables most of the on-screen test pads.</p>
 
     <h2>Third-party services</h2>
-    <p>The only third-party service integrated is Firebase (Google), used exclusively for the legitimate-installation check described above — not for ads, usage analytics, or any other purpose. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for how those technical signals are handled on their end.</p>
+    <p>No third-party service is integrated into the app. The only network communication is the query to the licensing service already built into the Play Store, described above — not used for ads, usage analytics, or any other purpose. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for how Google Play handles this query on its end.</p>
 
     <h2>Children</h2>
     <p>The app doesn't collect personal data from anyone, including children, for the same reasons above.</p>
@@ -166,11 +166,11 @@
     </ul>
 
     <h2>Comprobación de instalación legítima</h2>
-    <p>Para evitar que una copia instalada de la app se copie y se comparta fuera de la Play Store, la app hace una comprobación técnica única (la primera vez que se abre, o de nuevo si la comprobación anterior falló) usando <strong>Firebase App Check</strong> de Google, con la <strong>Play Integrity API</strong> — un servicio de Google que confirma si la instalación vino de verdad de la Play Store. Una vez confirmada, el resultado se guarda solo en el dispositivo, y la app vuelve a funcionar 100% offline en el uso normal.</p>
-    <p>Esta comprobación envía a Google señales técnicas sobre el dispositivo y la integridad de la app (nada que te identifique personalmente — sin nombre, correo ni cuenta) y recibe de vuelta solo una confirmación. Mientras no esté confirmada, la app bloquea la comunicación con módulos MIDI externos y desactiva la mayoría de los pads de prueba en pantalla.</p>
+    <p>Para evitar que una copia instalada de la app se copie y se comparta fuera de la Play Store, la app hace una comprobación técnica única (la primera vez que se abre, o de nuevo si la comprobación anterior falló) usando el <strong>servicio de licencias de la propia Google Play Store</strong> (Google Play Licensing) — el mismo mecanismo interno que la Play Store ya usa para confirmar compras de cualquier app de pago. Una vez confirmada, el resultado se guarda solo en el dispositivo, y la app vuelve a funcionar 100% offline en el uso normal.</p>
+    <p>Esta comprobación consulta la app de la Play Store ya instalada en tu dispositivo, preguntando solo si la cuenta activa tiene derecho a esta app, y recibe de vuelta solo una confirmación firmada digitalmente — Th-FDrums Player no envía ni recibe tu nombre, correo, ubicación ni nada que te identifique personalmente. Mientras no esté confirmada, la app bloquea la comunicación con módulos MIDI externos y desactiva la mayoría de los pads de prueba en pantalla.</p>
 
     <h2>Servicios de terceros</h2>
-    <p>El único servicio de terceros integrado es Firebase (Google), usado exclusivamente para la comprobación de instalación legítima descrita arriba — no se usa para anuncios, analíticas de uso ni ningún otro fin. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a> para saber cómo tratan esas señales técnicas de su lado.</p>
+    <p>No hay ningún servicio de terceros integrado en la app. La única comunicación de red es la consulta al servicio de licencias ya integrado en la Play Store, descrita arriba — no se usa para anuncios, analíticas de uso ni ningún otro fin. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a> para saber cómo Google Play trata esa consulta de su lado.</p>
 
     <h2>Menores</h2>
     <p>La app no recopila datos personales de nadie, incluidos menores, por los mismos motivos anteriores.</p>
