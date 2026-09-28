@@ -49,40 +49,44 @@
 
   <div id="pt" class="lang active">
     <h1>Th-FDrums Player</h1>
-    <div class="subtitle">Política de Privacidade — última atualização: 19 de agosto de 2026</div>
+    <div class="subtitle">Política de Privacidade — última atualização: 28 de setembro de 2026</div>
 
     <div class="card">
-      <strong>Resumo direto: o Th-FDrums Player não coleta, armazena remotamente, transmite ou compartilha nenhum dado pessoal seu.</strong> O aplicativo funciona quase inteiramente no seu aparelho — a única exceção é uma checagem técnica única, na instalação, pra confirmar que a cópia do app é legítima (ver seção "Verificação de instalação legítima" abaixo).
+      <strong>Resumo direto: o Th-FDrums Player não coleta, armazena remotamente, transmite ou compartilha nenhum dado pessoal seu.</strong> O aplicativo funciona quase inteiramente no seu aparelho — as únicas comunicações são com a própria Google Play Store: a checagem de que a cópia do app é legítima e a assinatura PRO (ver as seções abaixo).
     </div>
 
     <h2>Quais dados o app coleta?</h2>
-    <p>Nenhum dado pessoal. O app não tem contas de usuário, não faz analytics de uso, não mostra anúncios e não rastreia o que você faz dentro dele. A única comunicação com a internet que o app faz é a checagem técnica de instalação legítima descrita abaixo — que não envia nome, e-mail, localização nem nenhuma informação que identifique você pessoalmente.</p>
+    <p>Nenhum dado pessoal. O app não tem contas de usuário, não faz analytics de uso, não mostra anúncios e não rastreia o que você faz dentro dele. As únicas comunicações com a internet são com a Google Play Store (checagem de instalação legítima e assinatura, descritas abaixo) — o app não envia nome, e-mail, localização nem nenhuma informação que identifique você pessoalmente.</p>
 
     <h2>O que o app guarda no aparelho</h2>
     <p>Tudo que o app processa fica salvo apenas localmente no seu próprio aparelho, no armazenamento do próprio app:</p>
     <ul>
       <li>Kits de bateria que você importar (arquivos de áudio e configurações);</li>
       <li>Mapeamentos de pads MIDI e presets de mixagem que você criar;</li>
-      <li>Gravações de sessão que você fizer dentro do app;</li>
-      <li>Preferências de tema e idioma.</li>
+      <li>Gravações de áudio e vídeo que você fizer dentro do app;</li>
+      <li>Preferências de tema, idioma e do app.</li>
     </ul>
     <p>Nada disso sai do aparelho a menos que você mesmo exporte um arquivo manualmente (ex.: exportar um kit ou compartilhar uma gravação).</p>
 
     <h2>Permissões que o app pede e por quê</h2>
     <ul>
       <li><strong>MIDI via USB / recurso de host USB</strong> — necessário pra conectar um módulo de bateria eletrônica ou controlador MIDI por cabo.</li>
-      <li><strong>Bluetooth (conectar / escanear)</strong> — necessário só pra conectar um módulo MIDI sem fio (BLE-MIDI) já pareado nas configurações do sistema. O app não usa Bluetooth pra nenhum outro fim.</li>
+      <li><strong>Bluetooth (conectar)</strong> — necessário só pra conectar um módulo MIDI sem fio (BLE-MIDI) já pareado nas configurações do sistema. O app não procura aparelhos próximos e não usa Bluetooth pra nenhum outro fim.</li>
       <li><strong>Notificações</strong> — usada apenas pra mostrar a notificação obrigatória do Android enquanto o motor de áudio está ativo em segundo plano (serviço em primeiro plano).</li>
       <li><strong>Armazenamento (via seletor de arquivos do sistema)</strong> — usado só quando você escolhe manualmente uma pasta ou arquivo pra importar (kit, música) ou uma pasta pra exportar — o app nunca varre o armazenamento sozinho sem essa escolha explícita.</li>
-      <li><strong>Microfone</strong> — usado só quando você escolhe "Gravar peça agora" no importador, pra capturar o som de uma peça acústica na hora. A gravação fica só no seu aparelho (vira um arquivo local, processado ali mesmo) — nunca é enviada a lugar nenhum.</li>
+      <li><strong>Microfone</strong> — usado só quando você escolhe "Gravar peça agora" no importador (pra capturar o som de uma peça acústica) ou liga "Microfone externo na gravação" (pra incluir, por exemplo, pratos acústicos numa gravação). O áudio fica só no seu aparelho — nunca é enviado a lugar nenhum.</li>
+      <li><strong>Câmera</strong> — usada só quando você escolhe gravar em vídeo na aba Música, pra filmar você tocando. O vídeo é salvo só no seu aparelho — nunca é enviado a lugar nenhum, a menos que você mesmo o compartilhe.</li>
     </ul>
 
     <h2>Verificação de instalação legítima</h2>
     <p>Pra evitar que uma cópia instalada do app seja copiada e repassada por fora da Play Store, o app faz uma checagem técnica única (na primeira vez que abre, ou de novo caso a checagem anterior falhe) usando o <strong>serviço de licenciamento da própria Google Play Store</strong> (Google Play Licensing) — o mesmo mecanismo interno que a Play Store já usa pra confirmar compras de qualquer app pago. Depois de confirmada uma vez, o resultado fica salvo só no aparelho, e o app volta a funcionar 100% offline no uso normal.</p>
     <p>Essa checagem consulta o app da Play Store já instalado no seu aparelho, perguntando apenas se a conta ativa tem direito a este app, e recebe de volta só uma confirmação assinada digitalmente — o Th-FDrums Player não envia nem recebe nome, e-mail, localização ou qualquer informação que identifique você pessoalmente. Enquanto ela não é confirmada, o app trava a comunicação com módulos MIDI externos e desativa a maior parte dos pads de teste em tela.</p>
 
+    <h2>Assinatura PRO (Google Play)</h2>
+    <p>A assinatura PRO (e o período de teste grátis) é contratada, cobrada e gerenciada inteiramente pelo <strong>Google Play</strong>. O pagamento é feito na tela do próprio Google Play: o Th-FDrums Player não vê nem guarda número de cartão, nome ou qualquer dado de pagamento — recebe do Google Play só a informação de que a assinatura está ativa, em teste ou encerrada, pra liberar os recursos. Você pode cancelar a qualquer momento em Google Play › Pagamentos e assinaturas › Assinaturas.</p>
+
     <h2>Serviços de terceiros</h2>
-    <p>Não há nenhum serviço de terceiros integrado ao app. A única comunicação de rede é a consulta ao serviço de licenciamento já embutido na Play Store, descrita acima — não é usada pra anúncios, analytics de uso ou qualquer outro fim. Veja a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidade do Google</a> pra saber como o Google Play trata essa consulta do lado dele.</p>
+    <p>Não há anúncios, analytics nem SDKs de terceiros no app. As únicas comunicações de rede são com a Google Play Store — o serviço de licenciamento e o Google Play Billing (assinatura), descritos acima — e não são usadas pra anúncios, analytics de uso ou qualquer outro fim. Veja a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidade do Google</a> pra saber como o Google Play trata essa consulta do lado dele.</p>
 
     <h2>Crianças</h2>
     <p>O app não coleta dados pessoais de ninguém, incluindo crianças, pelos mesmos motivos acima.</p>
@@ -93,40 +97,44 @@
 
   <div id="en" class="lang">
     <h1>Th-FDrums Player</h1>
-    <div class="subtitle">Privacy Policy — last updated: August 19, 2026</div>
+    <div class="subtitle">Privacy Policy — last updated: September 28, 2026</div>
 
     <div class="card">
-      <strong>Short version: Th-FDrums Player does not collect, remotely store, transmit, or share any personal data of yours.</strong> The app runs almost entirely on your device — the only exception is a one-time technical check, at install, to confirm the app copy is legitimate (see "Legitimate installation check" below).
+      <strong>Short version: Th-FDrums Player does not collect, remotely store, transmit, or share any personal data of yours.</strong> The app runs almost entirely on your device — its only communications are with the Google Play Store itself: the check that the app copy is legitimate and the PRO subscription (see the sections below).
     </div>
 
     <h2>What data does the app collect?</h2>
-    <p>No personal data. There are no user accounts, no usage analytics, no ads, and no tracking of what you do inside the app. The only internet communication the app makes is the legitimate-installation check described below — which does not send your name, email, location, or anything that personally identifies you.</p>
+    <p>No personal data. There are no user accounts, no usage analytics, no ads, and no tracking of what you do inside the app. Its only internet communications are with the Google Play Store (legitimate-installation check and subscription, described below) — the app does not send your name, email, location, or anything that personally identifies you.</p>
 
     <h2>What the app stores on your device</h2>
     <p>Everything the app processes is saved only locally, in the app's own storage on your device:</p>
     <ul>
       <li>Drum kits you import (audio files and configuration);</li>
       <li>MIDI pad mappings and mixer presets you create;</li>
-      <li>Session recordings you make inside the app;</li>
-      <li>Theme and language preferences.</li>
+      <li>Audio and video recordings you make inside the app;</li>
+      <li>Theme, language and app preferences.</li>
     </ul>
     <p>None of this leaves the device unless you manually export a file yourself (e.g., exporting a kit or sharing a recording).</p>
 
     <h2>Permissions the app requests and why</h2>
     <ul>
       <li><strong>USB MIDI / USB host feature</strong> — required to connect an electronic drum module or MIDI controller over cable.</li>
-      <li><strong>Bluetooth (connect / scan)</strong> — required only to connect a wireless MIDI module (BLE-MIDI) already paired in system settings. The app doesn't use Bluetooth for anything else.</li>
+      <li><strong>Bluetooth (connect)</strong> — required only to connect a wireless MIDI module (BLE-MIDI) already paired in system settings. The app does not search for nearby devices and doesn't use Bluetooth for anything else.</li>
       <li><strong>Notifications</strong> — used only to show the Android-required notification while the audio engine runs as a foreground service.</li>
       <li><strong>Storage (via the system file picker)</strong> — used only when you manually pick a folder or file to import (kit, music) or a folder to export to — the app never scans storage on its own without that explicit choice.</li>
-      <li><strong>Microphone</strong> — used only when you choose "Record piece now" in the importer, to capture the sound of an acoustic piece on the spot. The recording stays only on your device (becomes a local file, processed right there) — it's never sent anywhere.</li>
+      <li><strong>Microphone</strong> — used only when you choose "Record piece now" in the importer (to capture the sound of an acoustic piece) or turn on "External microphone in the recording" (to include, for example, acoustic cymbals in a recording). The audio stays only on your device — it's never sent anywhere.</li>
+      <li><strong>Camera</strong> — used only when you choose to record video in the Music tab, to film yourself playing. The video is saved only on your device — it's never sent anywhere unless you share it yourself.</li>
     </ul>
 
     <h2>Legitimate installation check</h2>
     <p>To prevent an installed copy of the app from being copied and passed around outside the Play Store, the app performs a one-time technical check (on first launch, or again if the previous check failed) using the <strong>Google Play Store's own licensing service</strong> (Google Play Licensing) — the same internal mechanism the Play Store already uses to confirm purchases for any paid app. Once confirmed, the result is saved only on the device, and the app goes back to working 100% offline in normal use.</p>
     <p>This check queries the Play Store app already installed on your device, asking only whether the active account is entitled to this app, and receives back only a digitally signed confirmation — Th-FDrums Player doesn't send or receive your name, email, location, or anything that identifies you personally. Until it's confirmed, the app blocks communication with external MIDI modules and disables most of the on-screen test pads.</p>
 
+    <h2>PRO subscription (Google Play)</h2>
+    <p>The PRO subscription (and the free trial) is purchased, billed and managed entirely by <strong>Google Play</strong>. Payment happens on Google Play's own screen: Th-FDrums Player never sees or stores your card number, name or any payment data — it only receives from Google Play whether the subscription is active, in trial or ended, to unlock the features. You can cancel anytime in Google Play › Payments &amp; subscriptions › Subscriptions.</p>
+
     <h2>Third-party services</h2>
-    <p>No third-party service is integrated into the app. The only network communication is the query to the licensing service already built into the Play Store, described above — not used for ads, usage analytics, or any other purpose. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for how Google Play handles this query on its end.</p>
+    <p>There are no ads, analytics or third-party SDKs in the app. Its only network communications are with the Google Play Store — the licensing service and Google Play Billing (subscription), described above — and are not used for ads, usage analytics, or any other purpose. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for how Google Play handles this query on its end.</p>
 
     <h2>Children</h2>
     <p>The app doesn't collect personal data from anyone, including children, for the same reasons above.</p>
@@ -137,40 +145,44 @@
 
   <div id="es" class="lang">
     <h1>Th-FDrums Player</h1>
-    <div class="subtitle">Política de Privacidad — última actualización: 19 de agosto de 2026</div>
+    <div class="subtitle">Política de Privacidad — última actualización: 28 de septiembre de 2026</div>
 
     <div class="card">
-      <strong>Versión corta: Th-FDrums Player no recopila, almacena de forma remota, transmite ni comparte ninguno de tus datos personales.</strong> La app funciona casi completamente en tu dispositivo — la única excepción es una comprobación técnica única, al instalarse, para confirmar que la copia de la app es legítima (ver la sección "Comprobación de instalación legítima" más abajo).
+      <strong>Versión corta: Th-FDrums Player no recopila, almacena de forma remota, transmite ni comparte ninguno de tus datos personales.</strong> La app funciona casi completamente en tu dispositivo — sus únicas comunicaciones son con la propia Google Play Store: la comprobación de que la copia de la app es legítima y la suscripción PRO (ver las secciones abajo).
     </div>
 
     <h2>¿Qué datos recopila la app?</h2>
-    <p>Ningún dato personal. No hay cuentas de usuario, ni analíticas de uso, ni anuncios, ni seguimiento de lo que haces dentro de la app. La única comunicación con internet que hace la app es la comprobación de instalación legítima descrita abajo — que no envía tu nombre, correo, ubicación ni nada que te identifique personalmente.</p>
+    <p>Ningún dato personal. No hay cuentas de usuario, ni analíticas de uso, ni anuncios, ni seguimiento de lo que haces dentro de la app. Sus únicas comunicaciones con internet son con la Google Play Store (comprobación de instalación legítima y suscripción, descritas abajo) — la app no envía tu nombre, correo, ubicación ni nada que te identifique personalmente.</p>
 
     <h2>Qué guarda la app en el dispositivo</h2>
     <p>Todo lo que la app procesa se guarda solo localmente, en el almacenamiento propio de la app en tu dispositivo:</p>
     <ul>
       <li>Kits de batería que importes (archivos de audio y configuración);</li>
       <li>Mapeos de pads MIDI y preajustes de mezcla que crees;</li>
-      <li>Grabaciones de sesión que hagas dentro de la app;</li>
-      <li>Preferencias de tema e idioma.</li>
+      <li>Grabaciones de audio y video que hagas dentro de la app;</li>
+      <li>Preferencias de tema, idioma y de la app.</li>
     </ul>
     <p>Nada de esto sale del dispositivo a menos que tú mismo exportes un archivo manualmente (por ejemplo, exportar un kit o compartir una grabación).</p>
 
     <h2>Permisos que solicita la app y por qué</h2>
     <ul>
       <li><strong>MIDI por USB / función de host USB</strong> — necesario para conectar un módulo de batería electrónica o controlador MIDI por cable.</li>
-      <li><strong>Bluetooth (conectar / escanear)</strong> — necesario solo para conectar un módulo MIDI inalámbrico (BLE-MIDI) ya emparejado en la configuración del sistema. La app no usa Bluetooth para ningún otro fin.</li>
+      <li><strong>Bluetooth (conectar)</strong> — necesario solo para conectar un módulo MIDI inalámbrico (BLE-MIDI) ya emparejado en la configuración del sistema. La app no busca dispositivos cercanos y no usa Bluetooth para ningún otro fin.</li>
       <li><strong>Notificaciones</strong> — usada solo para mostrar la notificación obligatoria de Android mientras el motor de audio funciona en segundo plano.</li>
       <li><strong>Almacenamiento (mediante el selector de archivos del sistema)</strong> — usado solo cuando eliges manualmente una carpeta o archivo para importar (kit, música) o una carpeta para exportar — la app nunca escanea el almacenamiento por su cuenta sin esa elección explícita.</li>
-      <li><strong>Micrófono</strong> — usado solo cuando eliges "Grabar pieza ahora" en el importador, para capturar el sonido de una pieza acústica en el momento. La grabación se queda solo en tu dispositivo (se convierte en un archivo local, procesado ahí mismo) — nunca se envía a ningún lugar.</li>
+      <li><strong>Micrófono</strong> — usado solo cuando eliges "Grabar pieza ahora" en el importador (para capturar el sonido de una pieza acústica) o activas "Micrófono externo en la grabación" (para incluir, por ejemplo, platos acústicos en una grabación). El audio se queda solo en tu dispositivo — nunca se envía a ningún lugar.</li>
+      <li><strong>Cámara</strong> — usada solo cuando eliges grabar en video en la pestaña Música, para filmarte tocando. El video se guarda solo en tu dispositivo — nunca se envía a ningún lugar, salvo que tú mismo lo compartas.</li>
     </ul>
 
     <h2>Comprobación de instalación legítima</h2>
     <p>Para evitar que una copia instalada de la app se copie y se comparta fuera de la Play Store, la app hace una comprobación técnica única (la primera vez que se abre, o de nuevo si la comprobación anterior falló) usando el <strong>servicio de licencias de la propia Google Play Store</strong> (Google Play Licensing) — el mismo mecanismo interno que la Play Store ya usa para confirmar compras de cualquier app de pago. Una vez confirmada, el resultado se guarda solo en el dispositivo, y la app vuelve a funcionar 100% offline en el uso normal.</p>
     <p>Esta comprobación consulta la app de la Play Store ya instalada en tu dispositivo, preguntando solo si la cuenta activa tiene derecho a esta app, y recibe de vuelta solo una confirmación firmada digitalmente — Th-FDrums Player no envía ni recibe tu nombre, correo, ubicación ni nada que te identifique personalmente. Mientras no esté confirmada, la app bloquea la comunicación con módulos MIDI externos y desactiva la mayoría de los pads de prueba en pantalla.</p>
 
+    <h2>Suscripción PRO (Google Play)</h2>
+    <p>La suscripción PRO (y la prueba gratis) se contrata, cobra y gestiona totalmente por <strong>Google Play</strong>. El pago se hace en la propia pantalla de Google Play: Th-FDrums Player nunca ve ni guarda número de tarjeta, nombre ni ningún dato de pago — solo recibe de Google Play si la suscripción está activa, en prueba o terminada, para liberar las funciones. Puedes cancelar cuando quieras en Google Play › Pagos y suscripciones › Suscripciones.</p>
+
     <h2>Servicios de terceros</h2>
-    <p>No hay ningún servicio de terceros integrado en la app. La única comunicación de red es la consulta al servicio de licencias ya integrado en la Play Store, descrita arriba — no se usa para anuncios, analíticas de uso ni ningún otro fin. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a> para saber cómo Google Play trata esa consulta de su lado.</p>
+    <p>No hay anuncios, analíticas ni SDKs de terceros en la app. Sus únicas comunicaciones de red son con la Google Play Store — el servicio de licencias y Google Play Billing (suscripción), descritos arriba — y no se usan para anuncios, analíticas de uso ni ningún otro fin. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a> para saber cómo Google Play trata esa consulta de su lado.</p>
 
     <h2>Menores</h2>
     <p>La app no recopila datos personales de nadie, incluidos menores, por los mismos motivos anteriores.</p>
